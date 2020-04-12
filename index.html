@@ -1,146 +1,45 @@
-<!doctype html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-        <script src="https://kit.fontawesome.com/78796bef5d.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="style.css">
-
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
-
-    <title>Bootstrap 4 Starter Template</title>
-    <style>
-        .container-sm {
-            margin-bottom: 0px;
-            /*background-image: url(background.jpg);*/
-            background-position: 0% 30%;
-            background-size: cover;
-            background-repeat: no-repeat;
-            color: white;
-            padding: 18px;
-            text-shadow: black 0.3em 0.3em 0.3em;
-        }
-
-        .card {
-            background-color: black;
-            border-style: solid;
-            /*border-color: #6a1b9a;*/
-            border-width: 15px;
-            outline: none;
-            border-left-color: blue;
-            border-right-color: blue;
-            box-shadow: 0 0 5px blue;
-        }
-
-        .btnglow{
-            outline: none;
-            border-color: #6a1b9a;
-            background-color: black;
-            box-shadow: 0 0 60px #6a1b9a;
-        }
-
-        .glow {
-            color: #fff;
-            text-align: center;
-            -webkit-animation: glow 1s ease-in-out infinite alternate;
-            -moz-animation: glow 1s ease-in-out infinite alternate;
-            animation: glow 1s ease-in-out infinite alternate;
-        }
-
-        body {
-            margin: 0px;
-            background-color: black;
-        }
-
-        .navbar {
-            color: white;
-            font-size: 18px;
-        }
-
-        img {
-            height: 80vh;
-        }
-
-
-        @-webkit-keyframes glow {
-            from {
-                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #6a1b9a, 0 0 40px #6a1b9a, 0 0 50px #6a1b9a, 0 0 60px #6a1b9a, 0 0 70px #6a1b9a;
-            }
-
-            to {
-                text-shadow: 0 0 20px #fff, 0 0 30px #6a1b9a, 0 0 40px #6a1b9a, 0 0 50px #6a1b9a, 0 0 60px #6a1b9a, 0 0 70px #6a1b9a, 0 0 80px #6a1b9a;
-            }
-        }
-
-
-        /* .carousel {
-                width: 80%;
-            } */
-    </style>
+    <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Rahul Raj K</title>
+    <link rel="stylesheet" type="text/css" href="css\style.css">
 </head>
-
 <body>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-  <div class="container-sm imgtag">
-        <nav class="navbar navbar-expand-lg navbar-dark overlay ">
-            <a class="navbar-brand" style="color: white" href="#">Interpreter</a>
-
-            <!-- ToggleButton -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">@rahulrajan_k</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">@rahulraj-k</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">@rahulraj_k</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="con tact.html">@Rahulkraj1125</a>
-                    </li>
-                </ul>
-            </div>
-
-        </nav>
-
-
-        <h1 class="display-3 mt-5 mb-5 text-center">ALL DEVELOPMENT AT ONE PLACE</h1>
-        <h1 class="display-4 mt-5 mb-5 text-center">Technology At The Best</h2>
-            <p class="lead">
-                <center><a class="btn btn-dark btn-lg mt-5" href="#" role="button" data-toggle="collapse"
-                        data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Learn
-                        more</a>
-
-                </center>
-            </p>
-
-            <div class="collapse mt-5 mb-5" id="collapseExample">
-                <center>
-                    <p class="lead">I'm an Android developer with one year of experience in developing Android applications using Android Studio. I'm well versed in Java, and have developed Java applications in NetBeans. I love coding and problem solving. I used to program in Java, Python and C. I use PHP, NodeJS, Postgres SQL for backend. Not only an Android developer, have more experience in Web application development using HTML, CSS, Javascript, Ajax , Flask and Django(Advanced).</p>
-                </center>
-            </div>
-
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo">INTERPRETER</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Hello World,<br>I'm <span>Rahul Raj K</span></h2>
+            <p>I'm an Android developer with two years of experience in developing Android applications using Android Studio. I'm well versed in Java, and have developed Java applications in NetBeans. I love coding and problem solving. I used to program in Java, Python and C. I use PHP, NodeJS, Postgres SQL for backend. Not only an Android developer, have more experience in Web application development using HTML, CSS, Javascript, Ajax , Flask and Django(Advanced).</p>
+            <a href="#">Know More</a>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="images\facebook.png"></a></li>
+            <li><a href="#"><img src="images\twitter.png"></a></li>
+            <li><a href="#"><img src="images\linkedin.png"></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Porfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </div>
-
-
+    <script type="text/javascript">
+        setTimeout(function() {
+            window.alert("Website Under Development")
+        }, 3000);
+        function toggle(){  
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
 </body>
-
 </html>
