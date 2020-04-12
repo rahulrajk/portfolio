@@ -21,7 +21,7 @@
             <li><a href="#"><img src="images\linkedin.png"></a></li>
         </ul>
     </section>
-    <div id="navigation">
+    <div id="navigation" style="display: none">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -40,6 +40,12 @@
             sec.classList.toggle('active');
             nav.classList.toggle('active');
         }
+
+        document.onreadystatechange = () => {
+              if (document.readyState === 'complete') {
+                document.getElementById('navigation').style.display="";
+              }
+            };
     </script>
 </body>
 </html>
