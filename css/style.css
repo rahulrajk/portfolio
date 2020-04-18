@@ -263,9 +263,9 @@
 @media (max-width: 767px)
 {
 	/*First Section*/
-	header 
+	.banner header 
 	{
-    	padding: 20px 50px;
+    	padding: 50px;
 	}
 	.banner {
     	padding: 100px 50px 150px;
@@ -275,7 +275,7 @@
     } 
     .banner .content p,
     .banner .content a{
-    	font-size: 1em;
+    	font-size: 0.8em;
     }
     .banner.active{
 		transform: translateX(-250px);
@@ -300,20 +300,18 @@
 
 
 	/*Second Section*/
-	header 
-	{
-    	padding: 20px 50px;
-	}
+	.aboutsection header{
+		padding: 50px;
+	}	
 	.aboutsection {
     	padding: 100px 50px 150px;
     }
     .aboutsection h2{
-    	font-size: 1.8em;
+    	font-size: 1.4em;
     } 
     .aboutsection .content p,
     .aboutsection .content a{
     	font-size: 1em;
-    	line-height: 2em;
     }
     .aboutsection.active{
 		transform: translateX(-250px);
