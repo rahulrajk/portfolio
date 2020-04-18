@@ -34,7 +34,7 @@
             <li><a href="#">Home</a></li>
             <li><a href="#" id="abtnav">About</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Porfolio</a></li>
+            <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </div>
@@ -62,9 +62,7 @@
 
 
     <script type="text/javascript">
-        // setTimeout(function() {
-        //     window.alert("Website Under Development")
-        // }, 10000);
+
         var t_toggle1 = false;
         function toggle(){  
             //First Section 
@@ -113,12 +111,13 @@
             }
         }
 
-        // document.onreadystatechange = () => {
-        //       if (document.readyState === 'complete') {
-        //         document.getElementById('navigation').style.display="";
-        //         console.log('document ready')
-        //       }
-        //     };
+        document.onreadystatechange = () => {
+              if (document.readyState === 'complete') {
+                setTimeout(function() {
+                    window.alert("Developer says 'He is still developing the website!!!'");
+                }, 5000);
+              }
+            };
 
         $("#abtnav").click(function() {
             $('html,body').animate({
