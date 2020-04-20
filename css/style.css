@@ -7,6 +7,7 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+
 .banner header{
 	position: absolute;
 	top:0;
@@ -123,7 +124,7 @@
 	color: #40c3ff;
 	font-size: 1.2em;
 }
-.content p{
+.banner .content p{
 	font-size: 1.2em;
 	color: #fff;
 	font-weight: 300;
@@ -258,6 +259,105 @@
 	color: white;
 }
 
+/*Education section*/
+.education header{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;  
+	display: flex;	
+	justify-content: space-between;
+	padding: 40px 100px; 
+	z-index: 1000;
+	transition: 0.6s;
+}
+.education header .logo{
+	position: relative;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition:0.6s;
+}
+.education header #toggle{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+.education header #toggle:before
+{
+	content: '';
+	position: absolute;
+	top: 7px;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+}
+.education header #toggle:after
+{
+	content: '';
+	position: absolute;
+	bottom : 7px;
+	width: 100%;
+	height: 2px;	
+	background: #fff;
+}
+.education.active header #toggle:before
+{
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%) rotate(45deg);
+}
+.education.active header #toggle:after
+{
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%) rotate(-45deg);
+}
+.education{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	background: url("../black.jpg");
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	transition: 0.5s;
+	z-index: 2; 
+}
+.education.active{
+	transform: translateX(-400px);
+}
+
+.card {
+    background-color: black;
+    border-style: solid;
+    border-width: 15px;
+    outline: none;
+    border-left-color: #40c3ff;
+    border-right-color: #40c3ff;
+    border-top-color: #40c3ff;
+
+    /*box-shadow: 0 0 5px #40c3ff;*/
+}
+
+.studies{
+	font-size: 2em;
+}
+
+.studies_content{
+	font-size: 1.2em;
+	color: #40c3ff;
+}
+
+.direction{
+	float: right;
+}
+
 
 
 @media (max-width: 767px)
@@ -316,4 +416,18 @@
     .aboutsection.active{
 		transform: translateX(-250px);
 	}
+
+	/*Education Section*/
+	.education header{
+		padding: 50px;
+	}	
+	.education {
+    	padding: 100px 50px 150px;
+    }
+    .education h2{
+    	font-size: 1.4em;
+    } 
+    .direction{
+    	float: left;
+    }
 }
