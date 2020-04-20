@@ -422,8 +422,11 @@
 	.education header{
 		padding: 50px;
 	}	
-	.education {
-    	padding: 100px 50px 150px;
+	.education{
+		padding: 50px;
+	}
+	.education .content {
+    	padding-top: 50px;
     }
     .education h2{
     	font-size: 1.4em;
@@ -449,4 +452,5 @@
 	.studies_content{
 		font-size: 0.6em;
 	}
+
 }
