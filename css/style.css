@@ -322,8 +322,9 @@
 	width: 100%;
 	min-height: 100vh;
 	padding: 100px;
-	background: url("../black.jpg");
-	background-size: cover;
+	background-color: black;
+	/*background: url("../black.jpg");
+	background-size: cover;*/
 	display: flex;
 	align-items: center;
 	transition: 0.5s;
