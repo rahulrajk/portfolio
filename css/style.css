@@ -428,6 +428,9 @@
     .education h2{
     	font-size: 1.4em;
     } 
+    .education.active{
+		transform: translateX(-250px);
+	}
     .direction{
     	float: left;
     }
@@ -441,9 +444,9 @@
 	    border-top-color: #40c3ff;
 	}
 	.studies{
-		font-size: 1em;
+		font-size: 1.2em;
 	}
 	.studies_content{
-		font-size: 0.4em;
+		font-size: 0.6em;
 	}
 }
