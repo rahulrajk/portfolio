@@ -53,7 +53,7 @@
         <section class="education" id="edu">
             <header>
                 <a href="#" class="logo">INTERPRETER</a>
-                <div id="toggle" onclick="toggle2()"></div>
+                <div id="toggle" onclick="toggle3()"></div>
             </header>
             <div class="content container-fluid">
                 <h2><span>My Studies...</span></h2><br>
@@ -160,7 +160,7 @@
             }    
             else{
                 t_toggle1 = false;
-                if (t_toggle2) {
+                if (t_toggle2||t_toggle3) {
 
                 }
                 else{
@@ -184,7 +184,7 @@
             }    
             else{
                 t_toggle2 = false;
-                if (t_toggle1) {
+                if (t_toggle1||t_toggle3) {
 
                 }
                 else{
@@ -194,6 +194,32 @@
                 }
             }
         }
+
+        //Third Section
+        var t_toggle3 = false;
+        function toggle3(){  
+            var edu = document.getElementById('edu');
+            var nav3 = document.getElementById('navigation');
+            edu.classList.toggle('active');
+            nav3.classList.toggle('active');
+            if (!t_toggle3) {
+                t_toggle3 = true;
+                document.getElementById('navigation').style.display="";  
+            }    
+            else{
+                t_toggle3 = false;
+                if (t_toggle1||t_toggle2) {
+
+                }
+                else{
+                    setTimeout(function() {
+                        document.getElementById('navigation').style.display="none";  
+                    }, 500);
+                }
+            }
+        }
+
+
 
         // document.onreadystatechange = () => {
         //       if (document.readyState === 'complete') {
