@@ -431,4 +431,19 @@
     .direction{
     	float: left;
     }
+    .card {
+	    background-color: black;
+	    border-style: solid;
+	    border-width: 8px;
+	    outline: none;
+	    border-left-color: #40c3ff;
+	    border-right-color: #40c3ff;
+	    border-top-color: #40c3ff;
+	}
+	.studies{
+		font-size: 1em;
+	}
+	.studies_content{
+		font-size: 0.4em;
+	}
 }
